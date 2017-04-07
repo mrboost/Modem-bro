@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>Modembro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="http://www.iconj.com/ico/k/6/k68zsjas7q.ico" type="image/x-icon" />
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 30%;
+  font-size: 16px;
+  padding: 12px 20px 12px 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myInput2 {
+  background-image: url('');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 30%;
+  font-size: 16px;
+  padding: 12px 20px 12px 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#ipv6box {
+  background-image: url('');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 30%;
+  font-size: 16px;
+  padding: 12px 20px 12px 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#ipv6port {
+  background-image: url('');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 5%;
+  font-size: 16px;
+  padding: 12px 2px 12px 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 110%;
+}
+
+#myUL2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 110%;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size:18px;
+  color: black;
+  display: block
+}
+
+#myUL2 li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size:18px;
+  color: black;
+  display: block
+}
+
+#myUL li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL2 li a.header {
+  background-color: #e2e2e2;
+  cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+#myUL2 li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://image.ibb.co/gTrRgQ/me.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#userlogin" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>USER LOGINS</p>
+  </a>
+  
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#userlogin" class="w3-bar-item w3-button" style="width:25% !important">USER LOGIN</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home"> <img src="https://image.ibb.co/db2fak/modembrowhite.png" alt="boy" class="w3-image" width="522" height="170">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">IPV6 Login</h2>
+    <form action="http://ccare-jump-01.chrcnc.twc.net/" method="post" target="_blank">
+            <input name="destination" size="50" type="text">
+            <input name="port" size="5" value="80" type="text">
+  			<input value="Go!" type="submit"></form>
+  <h2 class="w3-text-light-grey">Modem Lookup</h2>
+<div class="w3-white">
+    
+  </div>
+    <input id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" type="text">
+    <ul id="myUL">
+  <li><a href="#" class="header">Modems</a></li>
+  <li><a>Belkin G Router F5D7234-4&nbsp; CPE IP (:8080)</a></li>
+  <li><a>Belkin N Router F5D8236&nbsp; CPE IP (:8080)</a></li>
+  <li><a>Motorola SBG900/SBG940		admin / motorola&nbsp; CM IP (:80)</a></li>
+  <li><a>Netgear 511	admin / password CPE IP (:8080)</a></li>
+  <li><a>Netgear 614	admin / password CPE IP (:8080)</a></li>
+  <li><a>Netgear 814	(Blank) / 1234 CPE IP (:8080)</a></li>
+  <li><a>Netgear CGD24g		admin / password&nbsp; CM IP (:80)</a></li>
+  <li><a>Netgear N600	admin / password&nbsp; CM IP (:80)</a></li>
+  <li><a>Netgear WNDR3700	admin / password&nbsp; CM IP (:80)</a></li>
+  <li><a>Scientific Atlantic	None required	192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>AMBIT	user / user		192.168.100.1&nbsp; CM IP (:80)</a></li>
+  <li><a>SMC Gateway/8014WG		div13820 / Ta2red8c		192.168.0.1 CM IP (:80)</a></li>
+  <li><a>SMC Router WBR14 G2	Same as user	192.168.2.1&nbsp; CPE IP (:8080)</a></li>
+  <li><a>SMC Router WBR14S		admin / smcadmin	192.168.2.1&nbsp; CPE IP (:8080)</a></li>
+  <li><a>Netgear WNR1000	admin / password	192.168.1.1 CPE IP (:8080)</a></li>
+  <li><a>Motorola SBG6580	technician / yZgO8Bvj	192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>Ubee DVW32C	technician / C0nf1gur3Ubee#		192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>Ubee DVW32CB	technician / C0nf1gur3Ubee#		192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>Ubee DDW365	technician / C0nf1gur3Ubee#  or	  last 8 of RF MAC in all caps / c0nf1gur3m3    192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>Ubee DDW3611	last 8 of RF MAC all caps / C0nf1gur3Ubee#		192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>Ubee DVW3201B	technician / C0nf1gur3Ubee#		192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>Ubee DDW36C AWG	technician / C0nf1gur3Ubee#		192.168.0.1&nbsp; CM IP (:80)</a></li>
+  <li><a>Arris TG862G/TG852G/TG862A		technician / T!m3W4rn3rC4bl3	192.168.100.1&nbsp; CM or MTA IP(:8080)</a></li>
+  <li><a>Arris DG860/TG860A		technician / T!m3W4rn3rC4bl3	192.168.0.1 CM or MTA IP(:8080)</a></li>
+  <li><a>Arris DG1670A	technician / T!m3W4rn3rC4bl3	192.168.0.1 CM or MTA IP(:8080)</a></li>
+  <li><a>Thomson DWG875		technician / T1meWarner!23 		192.168.0.1&nbsp; CM IP</a></li>
+  <li><a>Arris TG1672G	technician / T!m3W4rn3rC4bl3	192.168.0.1&nbsp; CM OR MTA IP(:8080)</a></li>
+  <li><a>Technicolor TC8715D	technician / T1meWarner!23	192.168.0.1&nbsp; CM IP (:8080)</a></li>
+  <li><a>Technicolor TC8717T	technician / T1meWarner!23	192.168.0.1&nbsp; CM IP (:8080)</a></li>
+  
+</ul>
+    <div class="w3-white">
+      
+    </div>
+    
+    <div class="w3-white">
+      
+    </div><br>
+    
+    
+
+    
+    
+    <!-- Grid for pricing tables -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="userlogin">
+    <h2 class="w3-text-light-grey">User Logins</h2>
+    <input id="myInput2" onkeyup="myFunction2()" placeholder="Search for names.." title="Type in a name" type="text" id="userlogins">
+    <ul id="myUL2">
+  <li><a href="#" class="header">Modems</a></li>
+  <li><a>Motorola SBG6580	admin / motorola	192.168.0.1</a></li>
+  <li><a>Ubee DVW32C	admin / see device label	192.168.0.1</a></li>
+  <li><a>Ubee DVW32CB	admin / see device label	192.168.0.1</a></li>
+  <li><a>Ubee DDW365	user / user	192.168.0.1</a></li>
+  <li><a>Ubee DDW3611	user / user	192.168.0.1</a></li>
+  <li><a>Ubee DVW3201B	user / user	192.168.0.1</a></li>
+  <li><a>Ubee DDW36C AWG	admin / see device label	192.168.0.1</a></li>
+  <li><a>Arris TG862G/TG852G/TG862A		admin / password	192.168.0.1</a></li>
+  <li><a>Arris DG860/TG860A		admin / password	192.168.0.1</a></li>
+  <li><a>Arris DG1670A	admin / password	192.168.0.1</a></li>
+  <li><a>Thomson DWG875		None / admin 		192.168.0.1</a></li>
+  <li><a>Arris TG1672G	admin / password	192.168.0.1</a></li>
+  <li><a>Technicolor TC8715D	admin / password	192.168.0.1</a></li>
+  <li><a>Technicolor TC8717T	admin / password	192.168.0.1</a></li>
+  
+</ul>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Aaron Daily : IPR Agent</p>
+      <p><em class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></em> Ext: 1232129</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Aaron.Daily@charter.com</p>
+    </div><br>
+    <p>If there is anything you would like to add, or see something that needs updated. Please contact me</p>
+
+  
+  <!-- End Contact Section -->
+</div>
+  
+    <!-- Footer -->
+  
+
+<!-- END PAGE CONTENT -->
+</div>
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+<script>
+function myFunction2() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput2");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL2");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+</body>
+</html>
